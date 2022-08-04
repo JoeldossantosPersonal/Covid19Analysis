@@ -1,5 +1,6 @@
 --Run queries in tableau -> save queries as excel worksheets and upload to tableau
 -- TableauTable1
+
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
 --Where location like '%states%'
